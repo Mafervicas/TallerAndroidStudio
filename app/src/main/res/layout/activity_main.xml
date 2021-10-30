@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btRed"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/red"
+                android:textColor="#000000"
+                android:onClick="RedColor"
+                tools:ignore="UsingOnClickInXml" />
+            <Button
+                android:id="@+id/btYellow"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/yellow"
+                android:textColor="#000000"
+                android:onClick="YellowColor"
+                tools:ignore="UsingOnClickInXml" />
+            <Button
+                android:id="@+id/btBlack"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/black"
+                android:textColor="#000000"
+                android:onClick="BlackColor"
+                tools:ignore="UsingOnClickInXml" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btWhite"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/white"
+                android:textColor="#000000"
+                android:onClick="WhiteColor"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/btRainbow"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/rainbow"
+                android:textColor="#000000" />
+            <Button
+                android:id="@+id/btClean"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/clean"
+                android:textColor="#000000"
+                android:onClick="fade"
+                tools:ignore="UsingOnClickInXml" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="110dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/hello_world"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/todo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
